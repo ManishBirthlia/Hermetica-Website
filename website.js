@@ -23,6 +23,9 @@ $(document).ready(function () {
 
   // Setting the active nav-link based on the scroll position
   // There is a better way to do this but this way works so I'll fix it later
+
+
+
   $(window).scroll(function () {
     if (
       $(window).scrollTop() >=

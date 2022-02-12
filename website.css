@@ -23,7 +23,8 @@ body {
   overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
-  background: url(BGI3.png) no-repeat center center;
+  /* background: url(BGI1.jpg) no-repeat center center; */
+  background-color: #041C32;
   background-size: cover;
   background-attachment: fixed;
   line-height: 18px;
@@ -71,6 +72,10 @@ body {
 }
 .floated.right {
   float: right;
+}
+marquee{
+  background-color: rgb(0 2 30);
+  height: 21px;
 }
 .abs-cent-text {
   position: absolute;
@@ -122,7 +127,7 @@ body {
 }
 .nav-bar.scrolled {
   height: 80px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #041C32;
 }
 .nav-logo {
   position: absolute;
@@ -159,16 +164,16 @@ body {
 } */
 .nav-link.active,
 .nav-link:hover {
-  color: #fff;
+  color: #ECB365;
 }
 .nav-link:visited {
-  color: #fff;
+  color: #ffffff;
 }
 .nav-link:hover {
-  transform: translateX(-30px);
-  background-color: black;
-  filter: invert(1);
-  border-radius: 20%;
+  /* transform: translateX(-30px); */
+  /* background-color: #04293A; */
+  /* filter: invert(1); */
+  border-radius: 10%;
 }
 .top-section {
   height: 100vh;
@@ -202,12 +207,35 @@ body {
   font-size: 58px;
   line-height: 72px;
   letter-spacing: 20px;
-  margin-bottom: 420px;
-  transition: all 0.5s ease-in-out 0.4s;
+  margin-bottom: 90px;
+  transition: all 0.5s ease-in-out 0.2s;
+  animation: Text 5s ease-in 0.3s infinite;
 }
-.big-text:hover {
+@keyframes Text {
+  0% {
+    transform: translateX(0px);
+    /* transform:scale(1) */
+  }
+  25% {
+    transform: translateX(-150px);
+    /* transform:scale(1.2) */
+  }
+  50% {
+    transform: translateX(0px);
+    /* transform:scale(1) */
+  }
+  75% {
+    transform: translateX(150px);
+    /* transform:scale(1.2) */
+  }
+  100% {
+    transform: translateX(0px);
+    /* transform:scale(1) */
+  }
+}
+/* .big-text:hover {
   transform: scale(1.3);
-}
+} */
 .half-big-text {
   font-family: "Andada Pro", serif;
   text-transform: uppercase;
@@ -222,10 +250,15 @@ body {
   margin: 0 auto 50px;
   padding: 15px 45px;
   border: 2px solid;
+  color: #ECB365;
   border-radius: 35px;
   background-color: #0000002b;
   backdrop-filter: blur(2px);
+  /* filter: drop-shadow(2px 4px 6px black); */
+}
+.half-big-text.has-border:hover {
   filter: drop-shadow(2px 4px 6px black);
+  color: white;
 }
 .blablabla {
   display: flex;
@@ -234,11 +267,13 @@ body {
 }
 .BGSIMG {
   display: flex;
-  background-color: #1d1d1d;
+  background-color: rgb(0 2 30);
+  position: relative;
+    top: -5px;
 }
 .under-top-section {
   color: #fff;
-  background-color: #1d1d1d;
+  /* background-color: #1d1d1d; */
   text-align: left;
   padding: 0 6%;
 }
@@ -361,6 +396,7 @@ body {
 }
 .welcome-section {
   height: 520px;
+  top: -6px;
   background: url("http://www.exlservice.com/wp-content/uploads/2015/09/FA-Business-Services-Hero-2.jpg")
     no-repeat left top;
   background-size: 1100px 660px;
@@ -370,7 +406,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(BGI4.jpg) no-repeat center center/cover;
+  /* background: url(BGI4.jpg) no-repeat center center/cover; */
+  background-color: #064663;
   width: 100vw;
   height: 100vh;
   opacity: 1;
@@ -379,7 +416,8 @@ body {
 }
 .welcome-section .orbitron {
   font-size: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 7px;
+  margin-top: 5px;
 }
 .welcome-text {
   right: 0;
@@ -389,7 +427,7 @@ body {
   text-align: center;
 }
 .welcome-text .big-text {
-  margin-bottom: 30px;
+  margin-bottom: -9px;
 }
 .welcome-text p {
   max-width: 480px;
@@ -756,10 +794,10 @@ body {
 }
 
 .service-row-half.grey-back {
-  background: url("https://dnbfeed.no/wp-content/uploads/2015/08/city-sunny-buildings-skyscrapers-e1440501856970-624x284.jpg")
+  background: url("https://cdn.rasayanika.com/wp-content/uploads/2019/08/shutterstock_1275926902-1.jpg")
     no-repeat center;
   background-size: cover;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
 }
 
 .service-row-half.black-back {
@@ -912,7 +950,7 @@ body {
 }
 
 .contact-left {
-  text-align: left;
+  text-align: center;
 }
 
 .contact-left .small-header {
@@ -947,8 +985,9 @@ body {
   font-family: "Fredoka One", cursive;
   font-size: 19px;
   line-height: 27px;
+  color: black;
   padding: 10px;
-  border: 5px solid;
+  border: #ECB365 5px solid;
   text-align: center;
   border-radius: 18px;
 }
@@ -1005,13 +1044,11 @@ body {
 .social-button.twitter-button {
   background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/twitter-square-social-media-256.png")
     no-repeat center;
-    
 }
 
 .social-button.facebook-button {
   background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/facebook-square-social-media-256.png")
     no-repeat center;
-    
 }
 
 .social-button.instagram-button {
@@ -1023,17 +1060,26 @@ body {
   background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/behance-square-social-media-256.png")
     no-repeat center;
 }
-.facebook-button:hover{
+.facebook-button:hover {
   transform: translateX(-10px);
 }
-.twitter-button:hover{
+.twitter-button:hover {
   transform: translateY(-10px);
 }
-.instagram-button:hover{
+.instagram-button:hover {
   transform: translateX(10px);
 }
-.black-back:hover{
+.black-back:hover {
   background-size: 10%;
+}
+.Back-to {
+  width: 50px;
+}
+.navlk{
+  color: #fbfbfb;
+}
+.navlk:hover{
+  color: #ECB365;
 }
 /* here starts the all animations */
 
@@ -1067,6 +1113,9 @@ body {
   .test-left .half-big-text {
     letter-spacing: 2px;
     padding: 15px 35px;
+  }
+  .nimbus-logo {
+    display: none;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -1112,7 +1161,8 @@ body {
     margin: 6px 6%;
   }
   .nav-logo {
-    left: 50px;
+    left: 42px;
+    top: 34px;
   }
   .checkbtn {
     display: block;
@@ -1460,6 +1510,31 @@ body {
     width: 796px;
     height: 444px;
     margin: 6px 6%;
+  }
+  .big-text {
+    animation: Text 5s ease-in 0.3s infinite;
+  }
+  @keyframes Text {
+    0% {
+      transform: translateX(0px);
+      /* transform:scale(1) */
+    }
+    25% {
+      transform: translateX(-35px);
+      /* transform:scale(1.2) */
+    }
+    50% {
+      transform: translateX(0px);
+      /* transform:scale(1) */
+    }
+    75% {
+      transform: translateX(35px);
+      /* transform:scale(1.2) */
+    }
+    100% {
+      transform: translateX(0px);
+      /* transform:scale(1) */
+    }
   }
   .img-slider .slide .info {
     padding: 10px 25px;
