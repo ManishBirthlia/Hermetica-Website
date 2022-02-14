@@ -21,10 +21,10 @@
 }
 body {
   overflow-x: hidden;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family:'Times New Roman', Times, serif;
   font-size: 14px;
-  /* background: url(BGI1.jpg) no-repeat center center; */
-  background-color: #041C32;
+  background: url(bg2.jpeg) no-repeat center center;
+  /* background-color: #041c32; */
   background-size: cover;
   background-attachment: fixed;
   line-height: 18px;
@@ -51,7 +51,7 @@ body {
   opacity: 1;
 }
 .p-justify {
-  text-align: justify;
+  text-align: center;
 }
 .rela-block {
   /* Used in all the headings which have to be center aligned. */
@@ -73,7 +73,7 @@ body {
 .floated.right {
   float: right;
 }
-marquee{
+marquee {
   background-color: rgb(0 2 30);
   height: 21px;
 }
@@ -127,7 +127,7 @@ marquee{
 }
 .nav-bar.scrolled {
   height: 80px;
-  background-color: #041C32;
+  background-color: #041c32;
 }
 .nav-logo {
   position: absolute;
@@ -164,7 +164,7 @@ marquee{
 } */
 .nav-link.active,
 .nav-link:hover {
-  color: #ECB365;
+  color: #ecb365;
 }
 .nav-link:visited {
   color: #ffffff;
@@ -210,26 +210,32 @@ marquee{
   margin-bottom: 90px;
   transition: all 0.5s ease-in-out 0.2s;
   animation: Text 5s ease-in 0.3s infinite;
+  
 }
 @keyframes Text {
   0% {
     transform: translateX(0px);
+    
     /* transform:scale(1) */
   }
   25% {
     transform: translateX(-150px);
+   
     /* transform:scale(1.2) */
   }
   50% {
     transform: translateX(0px);
+   
     /* transform:scale(1) */
   }
   75% {
     transform: translateX(150px);
+ 
     /* transform:scale(1.2) */
   }
   100% {
     transform: translateX(0px);
+ 
     /* transform:scale(1) */
   }
 }
@@ -250,11 +256,10 @@ marquee{
   margin: 0 auto 50px;
   padding: 15px 45px;
   border: 2px solid;
-  color: #ECB365;
+  color: #ecb365;
   border-radius: 35px;
   background-color: #0000002b;
   backdrop-filter: blur(2px);
-  /* filter: drop-shadow(2px 4px 6px black); */
 }
 .half-big-text.has-border:hover {
   filter: drop-shadow(2px 4px 6px black);
@@ -269,7 +274,8 @@ marquee{
   display: flex;
   background-color: rgb(0 2 30);
   position: relative;
-    top: -5px;
+  height: 578px;
+  top: -5px;
 }
 .under-top-section {
   color: #fff;
@@ -397,6 +403,7 @@ marquee{
 .welcome-section {
   height: 520px;
   top: -6px;
+  box-shadow: #041c32 0px 33px 66px -20px;
   background: url("http://www.exlservice.com/wp-content/uploads/2015/09/FA-Business-Services-Hero-2.jpg")
     no-repeat left top;
   background-size: 1100px 660px;
@@ -406,8 +413,8 @@ marquee{
   position: absolute;
   top: 0;
   left: 0;
-  /* background: url(BGI4.jpg) no-repeat center center/cover; */
-  background-color: #064663;
+  background: url(bg1.jpg) no-repeat center center/cover;
+  /* background-color: #064663; */
   width: 100vw;
   height: 100vh;
   opacity: 1;
@@ -508,9 +515,10 @@ marquee{
 .small-header {
   font-family: "Libre Baskerville", serif;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 28px;
-  letter-spacing: 8px;
+  text-align: center;
+  letter-spacing: 7px;
   margin-bottom: 20px;
 }
 
@@ -794,7 +802,7 @@ marquee{
 }
 
 .service-row-half.grey-back {
-  background: url("https://cdn.rasayanika.com/wp-content/uploads/2019/08/shutterstock_1275926902-1.jpg")
+  background: url("PJ1.jpeg")
     no-repeat center;
   background-size: cover;
   /* filter: grayscale(1); */
@@ -987,7 +995,7 @@ marquee{
   line-height: 27px;
   color: black;
   padding: 10px;
-  border: #ECB365 5px solid;
+  border: #ecb365 5px solid;
   text-align: center;
   border-radius: 18px;
 }
@@ -1008,20 +1016,13 @@ marquee{
   color: #fff;
 }
 
-.footer-section .small-header {
+/* .footer-section .small-header {
   margin: 0px 761px 41px;
-}
+} */
 
 .footer-section .top-link {
   cursor: pointer;
-}
-
-.social-buttons-container {
-  min-height: 100px;
   width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 20px;
-  text-align: center;
 }
 
 .social-button {
@@ -1069,17 +1070,39 @@ marquee{
 .instagram-button:hover {
   transform: translateX(10px);
 }
+.social-buttons-container {
+  min-height: 100px;
+  width: 406px;
+  top: -401px;
+  left: 20%;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 0% 108px 0%;
+  text-align: center;
+}
 .black-back:hover {
   background-size: 10%;
 }
 .Back-to {
   width: 50px;
 }
-.navlk{
+.navlk {
   color: #fbfbfb;
 }
-.navlk:hover{
-  color: #ECB365;
+.navlk:hover {
+  color: #ecb365;
+}
+p {
+  text-align: center;
+  font-size: 1rem;
+}
+i,
+strong {
+  font-size: 1.4rem;
+  text-align: center;
+}
+#Arow{
+  height: 48px
 }
 /* here starts the all animations */
 
@@ -1096,23 +1119,32 @@ marquee{
   color: white;
   float: right;
   line-height: 80px;
-  margin-right: 40px;
+  /* margin-right: 40px; */
   cursor: pointer;
   display: none;
 }
 #check {
   display: none;
 }
+/* .social-buttons-container {
+  left: 2%;
+} */
 /* here starts the @media */
 @media screen and (max-width: 1598px) {
   .under-top-section::before .under-top-section::after {
     z-index: -100000;
+  }
+  .social-buttons-container {
+    left: 10%;
   }
 }
 @media screen and (max-width: 1300px) {
   .test-left .half-big-text {
     letter-spacing: 2px;
     padding: 15px 35px;
+  }
+  .social-buttons-container {
+    left: 2%;
   }
   .nimbus-logo {
     display: none;
@@ -1124,7 +1156,9 @@ marquee{
     line-height: 50px;
     letter-spacing: 14px;
   }
-
+  .social-buttons-container {
+    left: 2%;
+}
   .nav-logo {
     left: 4%;
   }
@@ -1154,6 +1188,15 @@ marquee{
   }
   .BGSIMG {
     flex-wrap: wrap;
+    height: 883px;
+  }
+  .social-buttons-container {
+    min-height: 100px;
+    position:inherit;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 20px;
+    text-align: center;
   }
   .img-slider {
     width: 796px;
@@ -1161,8 +1204,8 @@ marquee{
     margin: 6px 6%;
   }
   .nav-logo {
-    left: 42px;
-    top: 34px;
+    left: 16px;
+    top: 40px;
   }
   .checkbtn {
     display: block;
@@ -1171,17 +1214,16 @@ marquee{
   .nav-links-container {
     background-color: #01020238;
     backdrop-filter: blur(4px);
-    height: 100vh;
+    height: 86vh;
     width: 100%;
     text-align: center;
     display: flex;
-    left: -100%;
+    left: 100%;
     top: 80px;
     transform: none;
-    /* flex-wrap: wrap; */
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: flex-end;
   }
   #check:checked ~ .nav-links-container {
     left: 0;
@@ -1194,14 +1236,11 @@ marquee{
     font-weight: 800;
     background-color: #02020240;
   }
-
   .nav-link {
     display: block;
-    height: 0;
-    font-size: 2rem;
-    font-weight: 800;
-    margin: 18px 0px;
-    padding: 50px 235px;
+    margin: auto auto;
+    /* height: 90vh; */
+    padding: 2% 9px;
   }
 
   .nav-link.active {
@@ -1421,7 +1460,7 @@ marquee{
 .img-slider .slide img {
   z-index: 1;
   width: 100%;
-  height: 387px;
+  height: 545px;
   border-radius: 5px;
 }
 
@@ -1444,6 +1483,7 @@ marquee{
   background: rgba(0, 0, 0, 0.1);
   font-size: 16px;
   width: 60%;
+  height: 543px;
   padding: 10px;
   border-radius: 4px;
 }
@@ -1452,7 +1492,7 @@ marquee{
   z-index: 2;
   position: absolute;
   display: flex;
-  bottom: 1px;
+  bottom: -147px;
   left: 50%;
   transform: translateX(-50%);
   justify-content: center;
@@ -1479,7 +1519,7 @@ marquee{
     margin: 6px 2%;
   }
   .img-slider .navigation {
-    bottom: 2px;
+    bottom: -147px;
   }
 }
 @media (max-width: 1440px) {
@@ -1489,7 +1529,7 @@ marquee{
     margin: 6px 2%;
   }
   .img-slider .navigation {
-    bottom: 2px;
+    bottom: -147px;
   }
 }
 @media (max-width: 1188px) {
