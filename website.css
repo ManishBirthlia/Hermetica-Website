@@ -52,6 +52,7 @@ body {
 }
 .p-justify {
   text-align: center;
+  font-size: 1.3rem;
 }
 .rela-block {
   /* Used in all the headings which have to be center aligned. */
@@ -209,7 +210,7 @@ marquee {
   letter-spacing: 20px;
   margin-bottom: 90px;
   transition: all 0.5s ease-in-out 0.2s;
-  animation: Text 5s ease-in 0.3s infinite;
+  animation: Text 10s ease-in 0.3s infinite;
   
 }
 @keyframes Text {
@@ -517,6 +518,7 @@ marquee {
   text-transform: uppercase;
   font-size: 2rem;
   line-height: 28px;
+  text-decoration: underline;
   text-align: center;
   letter-spacing: 7px;
   margin-bottom: 20px;
@@ -804,12 +806,15 @@ marquee {
 .service-row-half.grey-back {
   background: url("PJ1.jpeg")
     no-repeat center;
+    height: 348px;
+    border-radius: 58px;
   background-size: cover;
   /* filter: grayscale(1); */
 }
 
 .service-row-half.black-back {
   background-color: #000;
+  border-radius: 53px;
   color: #fff;
 }
 
@@ -1277,8 +1282,9 @@ strong {
   }
 
   .service-row-half {
-    height: 50%;
-    width: 100%;
+    /* height: 50%; */
+    /* width: 100%; */
+    height: 348px;
   }
 
   .testimonials-section {
@@ -1306,8 +1312,20 @@ strong {
     text-align: center;
   }
 }
-
+@media  screen and (max-width:768px) {
+  .half-big-text.has-border {
+    display: inline-block;
+    padding: 5px 31px;
+    font-size: large;
+}
+.diss{
+  display: none;
+}
+}
 @media screen and (max-width: 700px) {
+  p.not-important-text {
+    display: none;
+  }
   .quad-half,
   .bottom-left-side,
   .bottom-right-side {
