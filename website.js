@@ -1,5 +1,3 @@
-// Pinspiration
-// https://www.pinterest.com/pin/271201208788842829/
 
 $(document).ready(function () {
   // Page scrolling function for the nav-links
@@ -14,12 +12,6 @@ $(document).ready(function () {
       ? $(".nav-bar").addClass("scrolled")
       : $(".nav-bar").removeClass("scrolled");
   });
-
-  // $(window).scroll(function () {
-  //   $(window).scrollTop() >= 110
-  //     ? $(".under-top-section").addClass("TS_scrolled")
-  //     : $(".under-top-section").removeClass("TS_scrolled");
-  // });
 
   // Setting the active nav-link based on the scroll position
   // There is a better way to do this but this way works so I'll fix it later
@@ -72,30 +64,3 @@ $(document).ready(function () {
     }
   });
 });
-
-
-
-    // const cursor = document.querySelector(".cursor");
-    // var timeout;
-
-    // //follow cursor on mousemove
-    // document.addEventListener("mousemove", (e) => {
-    //   let x = e.pageX;
-    //   let y = e.pageY;
-
-    //   cursor.style.top = y + "px";
-    //   cursor.style.left = x + "px";
-    //   cursor.style.display = "block";
-
-    //   //cursor effects when mouse stopped
-    //   function mouseStopped(){
-    //     cursor.style.display = "none";
-    //   }
-    //   clearTimeout(timeout);
-    //   timeout = setTimeout(mouseStopped, 1000);
-    // });
-
-    // //cursor effects when mouseout
-    // document.addEventListener("mouseout", () => {
-    //   cursor.style.display = "none";
-    // });
