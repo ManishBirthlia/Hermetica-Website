@@ -413,7 +413,7 @@ marquee {
   bottom: 10px;
 }
 .about-us-section {
-  padding: 250px 0 80px;
+  padding: 126px 0px 80px;
   font-size: 1.4rem;
 }
 .about-us-section > p {
@@ -424,7 +424,7 @@ marquee {
 }
 
 .about-us-section .orbitron {
-  margin-bottom: 100px;
+  margin-bottom: 76px;
 }
 
 .about-us-quad-container,
@@ -1099,6 +1099,7 @@ strong {
 
   .welcome-section {
     background-size: 800px 580px;
+    height: 580px;
   }
 
   .plan {
@@ -1112,7 +1113,7 @@ strong {
   }
   .BGSIMG {
     flex-wrap: wrap;
-    height: 883px;
+    height: 700px;
   }
   .social-buttons-container {
     min-height: 100px;
@@ -1248,7 +1249,18 @@ strong {
     padding: 0 0 30px;
     width: 100%;
   }
-
+  .half-big-text {
+    margin-bottom: 5px;
+  }
+  .about-us-section {
+    padding: 97px 0 40px;
+  }
+  .contact-section > p {
+    margin: 0 auto 78px;
+}
+  .about-us-section > p {
+  margin: 30px auto 80px;
+  }
   .collage-column {
     height: 33.333333%;
     width: 100%;
