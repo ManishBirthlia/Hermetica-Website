@@ -1265,9 +1265,7 @@ strong {
     left: 2%;
   }
 
-  .nimbus-logo {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width: 1100px) {
@@ -1282,7 +1280,10 @@ strong {
   .social-buttons-container {
     left: 2%;
   }
-
+  #nimbus{
+    left: -21px;
+    width: 500px;
+  }
   .nav-logo {
     left: 4%;
   }
@@ -1309,7 +1310,9 @@ strong {
   .nav-bar.scrolled .nav-links-container {
     right: 0px;
   }
-
+  .nimbus-logo {
+    display: none;
+  }
   .BGSIMG {
     flex-wrap: wrap;
     height: 966px;
@@ -1764,7 +1767,9 @@ strong {
     width: 362px;
     height: 200px;
   }
-
+  .welcome-section{
+    height: 630px;
+  }
   .img-slider .slide img {
     height: 200px;
   }
