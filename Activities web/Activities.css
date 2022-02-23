@@ -58,6 +58,14 @@ li{
     align-items: center;
     height: 100vh;
 }
+.title-of-text-section{
+    background-color: #b9c1cc;
+    padding: 26px;
+    font-size: revert;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+}
 .text_activities_1,.text_activities_2{
     padding: 1em 0px;
     color: white;
