@@ -2,11 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
 }
+header{
+    height: 88px;
+    z-index: 3;
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(#db545a, #1d1c3c) !important;
+    color: rgb(255, 255, 255);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+a:visited{
+    color: #5b9fdf;
+}
+a:hover{
+    color: #db545a;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style:none;
+    /* margin: 18px; */
+    padding: 0px 40px 0px 41px;
+}
+.nav_links{
+    width: fit-content;
+    position: absolute;
+    right: 5%;
+    font-size: 1.5em;
+    padding-top: 33px;
+}
+.logo_img{
+    position: absolute;
+    left: 5%;
+    padding: 23px;
+}
+
 body{
-    background: url(sike.jpg) no-repeat center center;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(sike.jpg) no-repeat center center;
     background-size: cover;
+    color: white;
 }
 input {
     display: none;
@@ -28,7 +70,7 @@ h1::before{
     position: absolute;
     width: 100px;
     height: 3px;
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(250, 245, 245);
     bottom: -10px;
     left: 50%;
     transform:  translateX(-50%);
@@ -118,7 +160,7 @@ label:hover{
     align-items: center;
     justify-content: center;
     transform: translate(0%, -50%);
-    color: rgb(7, 7, 7);
+    color: rgb(255, 253, 253);
     font-size: 22px;
     font-weight: bold;
     width: 100%;
@@ -189,3 +231,38 @@ label:hover{
     transform: scale(0);
     position: relative;
 } */
+@media screen and (max-width:768px) {
+    .pic{
+        width: 41%;
+        height: 241px;
+    } 
+}
+@media screen and (max-width:590px) {
+    .text_activities_1 {
+        font-size: 3rem;
+    } 
+    .text_activities_2 {
+        font-size: 0.8rem;
+    } 
+    li {
+        list-style: none;
+        /* margin: 18px; */
+        padding: 0px 10px 0px 10px;
+    }
+    .pic{
+        width: 33%;
+        height: 170px;
+    }
+}
+@media screen and (max-width:425px) {
+    .pic{
+        width: 81%;
+        height: 241px;
+    } 
+}
+@media screen and (max-width:400px) {
+    a {
+        font-weight: 400;
+        font-size: 0.7rem;
+    }
+}
