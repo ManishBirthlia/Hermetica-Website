@@ -101,7 +101,7 @@ h1::before{
     align-content: center;
     justify-content: center;
 }
-h3{
+.gallery_text{
     height: 100%;
     background-color: rgb(128, 126, 126);
     line-height: 60px;
@@ -124,7 +124,7 @@ label:hover{
     color: black;
 }
 .gallery{
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -133,7 +133,7 @@ label:hover{
     justify-content: center;
     align-items: center;
 }
-.pic{
+/* .pic{
     display: none;
     position: relative;
     width: 23%;
@@ -155,9 +155,9 @@ label:hover{
     position: absolute;
     display: flex;
     /* top: 24%; */
-    left: 0%;
+     /* left: 0%; */
     /* height: 26vh; */
-    align-items: center;
+    /* align-items: center;
     justify-content: center;
     transform: translate(0%, -50%);
     color: rgb(255, 253, 253);
@@ -170,9 +170,9 @@ label:hover{
 .pic:hover::before{
     margin-top: 0;
     opacity: 1;
-    width: 100%;
+    width: 100%; */
     /* top: 0%; */
-    transform: translate(0%, 0%);
+    /* transform: translate(0%, 0%);
     display: flex;
     height: 26vh;
     backdrop-filter: blur(1px);
@@ -182,16 +182,16 @@ label:hover{
     flex-wrap: wrap;
     flex-direction: row;
     z-index: 1;
-}
-#photo1:checked ~ .pic{
-    display: block;
+} */
+#photo1:checked ~ .pic_common{
+    display: flex;
     opacity: 1;
     transform: scale(1);
     position: relative;
     transition:all .5s;
 }
 #photo2:checked ~ .team{
-    display: block;
+    display: flex;
     /* opacity: 1; */
     transform: scale(1);
     position: relative;
@@ -205,7 +205,7 @@ label:hover{
 
 } */
 #photo3:checked ~ .events{
-    display: block;
+    display: flex;
     /* opacity:1; */
     transform: scale(1);
     position: relative;
@@ -219,7 +219,7 @@ label:hover{
 
 } */
 #photo4:checked ~ .projects{
-    display: block;
+    display: flex;
     /* opacity: 1; */
     transform: scale(1);
     position: relative;
