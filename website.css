@@ -50,10 +50,10 @@ input::-webkit-inner-spin-button {
   display: none;
 } */
 .another-about-image img {
-  width: 50%;
-  height: 80%;
+  width: 30%;
+  height: 50%;
   background-position: center;
-  margin-top: 14px;
+  margin-top: 44px;
 }
 .another-about-image{
   height: 200px;
