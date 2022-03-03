@@ -11,14 +11,14 @@
 body{
     background-color: #b9c1cc;
 }
-header{
+/* header{
     height: 88px;
     z-index: 3;
     position: sticky;
     top: 0px;
     background-image: linear-gradient(#db545a, #1d1c3c) !important;
     color: rgb(255, 255, 255);
-}
+} */
 a{
     text-decoration: none;
     color: inherit;
@@ -52,7 +52,7 @@ li{
 }
 
 .Activities_section{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(/images/sike.jpg) no-repeat center center/cover;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(images/sike.jpg) no-repeat center center/cover;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -110,7 +110,7 @@ li{
     align-items: center;
 }
 .pic_containor1{
-    background: url(/images/default-image.jpg) no-repeat center center/cover;
+    background: url(images/default-image.jpg) no-repeat center center/cover;
     width: 100%;
     height: 100%;
 }
