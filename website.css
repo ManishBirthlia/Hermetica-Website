@@ -417,7 +417,7 @@ marquee>p{
   border-radius: 20px;
   display: inline-block;
   position: relative;
-  margin: 0 auto 50px;
+  /* margin: 0 auto 50px; */
   padding: 15px 45px;
   border: 3px solid;
   /* text-shadow: 1px 1px white;
@@ -680,14 +680,14 @@ marquee>p{
 .about-us-section>p {
   display: block;
   position: relative;
-  text-align: center;
-  width: 90%;
+  text-align: left;
+  width: 80%;
   margin: 30px auto 65px;
 }
 
-.about-us-section .orbitron {
+/* .about-us-section .orbitron {
   margin-bottom: 100px;
-}
+} */
 
 .about-us-quad-container,
 .about-us-bottom-container {
@@ -1124,6 +1124,11 @@ marquee>p{
   max-width: 900px;
   margin: 0 auto 14px;
 }
+.nimbus-part p {
+  color: #ecebeb;
+  font-family: poppins-m;
+  text-align: center;
+}
 
 .contact-form-container {
   max-width: 1300px;
@@ -1143,7 +1148,16 @@ marquee>p{
   width: 100%;
   /* opacity: 0.3; */
 }
-
+.this-is-you {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 22px;
+}
+.about_down_text{
+  font-size: 0.9rem;
+  line-height: 23px;
+  text-align: l;
+}
 #contactSection::after {
   background: #000122;
   opacity: 0.9;
@@ -1291,7 +1305,7 @@ marquee>p{
   left: 20%;
   position: relative; */
   /* max-width: 1000px; */
-  margin: 75px 0% 108px 0%;
+  /* margin: 75px 0% 108px 0%; */
   text-align: center;
 }
 
@@ -1419,6 +1433,9 @@ strong {
   }
   .SB2{
     display: block;
+  }
+  h2.small-header.top-link {
+    height: 10px;
   }
   .contact-quad {
     text-align: center;
@@ -1890,15 +1907,54 @@ strong {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 400px) {
+  .contact-half {
+    font-size: 7px;
+}
+}
+@media (max-width: 425px) {
   .img-slider {
     width: 362px;
     height: 200px;
   }
+  .quad-half p {
+    text-align: center;
+    line-height: 18px;
+    font-size: .6rem;
+}
+  .nimbus-part p {
+    text-align: justify;
+    /* width: 80%; */
+    line-height: 18px;
+    font-size: .6rem;
+  }
+  .BGSIMG {
+    height: 657px;
+  }
+  .about-us-section>p {
+    text-align: justify;
+    /* width: 80%; */
+    line-height: 18px;
+    font-size: .6rem;
+}
+  .this-is-you {
+    font-size: 0.8rem;
+    /* line-height: 22px; */
+  }
+  .small-header {
+    letter-spacing: 0px;
+  }
+  .contact-input {
+    width: 70%;
+  }
+  .half-big-text {
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+  }
   .another-about-image img {
-    width: 30%;
-    height: 30%;
-    margin-top: 70px;
+      width: 30%;
+      height: 30%;
+      margin: 69px auto;
   }
   .welcome-section {
     height: 630px;
@@ -2130,17 +2186,8 @@ strong {
 
 /**********************************************************************************************/
 
-.this-is-you {
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 22px;
-}
 
-.nimbus-part p {
-  color: #ecebeb;
-  font-family: poppins-m;
-  text-align: center;
-}
+
 
 .half-big-text.has-border.small-cum-big {
   margin-bottom: 20px;
