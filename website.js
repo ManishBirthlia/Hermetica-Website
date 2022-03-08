@@ -104,3 +104,20 @@ $(document).ready(function () {
 //   }, 0.2), '-=0.4'
 // );
 //**************************************************************
+
+// let body = document.querySelector("body");
+ let navBar = document.querySelector(".nav-links-container");
+ let menuBtn = document.querySelector(".checkbtn");
+ let cancelBtn = document.querySelector(".nav-link"); 
+      menuBtn.onclick = function(){
+    $('.nav-links-container').toggleClass("activess");
+      }
+
+ // Side Navigation Bar Close While We Click On Navigation Links
+
+ let navLinks = document.querySelectorAll(".nav-links-container a");
+    for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener("click" , function() {
+          $('.nav-links-container').toggleClass("activess");
+   });
+  }
