@@ -1358,9 +1358,9 @@ strong {
   display: none;
 }
 
-#check {
+/* #check {
   display: none;
-}
+} */
 
 @media screen and (max-width: 1598px) {
   .under-top-section::before .under-top-section::after {
@@ -1493,12 +1493,12 @@ strong {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-  }
-
-  #check:checked~.nav-links-container {
-    left: 0;
     transition: 1s;
   }
+  /* #check:checked~.nav-links-container {
+    left: 0;
+    transition: 1s;
+  } */
 
   .nav-link {
     display: block;
@@ -2325,3 +2325,6 @@ background:url("./project-icon-white.png") no-repeat center ;
 position: absolute;
 inset: 0;
 background-size: 40%; */
+.activess{
+  left: 0%;
+}
